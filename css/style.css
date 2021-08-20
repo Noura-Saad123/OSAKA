@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto",sans-serif; 
+}
+.main-color{
+    color: rgb(250, 11, 111);
+}
+.Home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+header{
+    
+    background-image:url(../images/bg1.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    color: white;
+}
+
+.home-contents{
+    padding-left: 40px;   
+}
+.home-contents h1{
+    font-weight: 400px;
+    padding-bottom: 20px;
+}
+.home-contents h4{
+    padding-bottom: 20px;
+}
+
+.Home ul li a{
+    color: white !important;
+}
+.social-icons ul{
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+}
+.social-icons ul li {
+    padding: 10px;
+    border: 1px solid #222;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.social-icons ul li:hover {
+    border: 1px solid white;
+}
+.clear-fix{
+    clear: both;
+}
+#about{
+    background-image:url(../images/light_dot.jpg);
+}
+.title h3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.title h2,.skills-title h2 ,.service-title h2 ,.protofilo-title h2 ,.price-title h2,.slideR-title h2,.blog-title h2 {
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 5rem;
+    z-index: -1; 
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.about-info h4{
+    font-weight: 600;
+}
+
+#skill,#contacts{
+    background-image: url(../images/21K8Vp-XBGL.jpg);
+}
+.skills-title h3,.service-title h3,.protofilo-title h3,.price-title h3,.slideR-title h3,.blog-title h3{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.skills-title p,.service-title p,.protofilo-title p,.price-title p,.slideR-title p,.blog-title p{
+    font-size: 1rem; 
+    color:#aaa;
+}
+.text-box{
+    border:10px solid rgb(250, 11, 111);
+    border-radius: 50%;
+}
+.text-box h6{
+    font-size: .875rem;
+    font-weight: 600;
+    color: #fff;
+}
+.text-box p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+#services{
+    background-image: url(../images/dark_dot.jpg);
+}
+.service-box i{
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 15%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 85%;
+    left: 50%;
+    padding: 17px 0;
+    width: 62px;
+    transform: translateX(-50%);
+    transition: all .5s;
+   
+}
+.service-box:hover i{
+    color: rgb(250, 11, 111);
+}
+.service-box-text h5::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ff206e;
+    margin: .75rem auto;
+    width: 35px;
+}
+
+#protofilos{
+    background-image: url(../images/light_dot.jpg);
+}
+
+.nav-link:hover{
+    color: rgb(250, 11, 111) !important;
+}
+
+.layer-content a{
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    border: 1 solid black;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.layer-content a:hover i{
+    color: rgb(250, 11, 111) !important;
+}
+.layer{
+    background-color: white; 
+    opacity: 0;
+    transition: all 0.5s;
+}
+.img-layer:hover .layer{
+    opacity: 0.8;
+  
+    top: 100;
+}
+.work1{
+    width: 200%;
+}
+#protofilos .nav-item .nav-link{
+    background-color: transparent !important;
+}
+
+
+
+.price-table {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgb(10 10 10 / 15%), 0 30px 50px -40px rgb(0 0 0 / 35%);
+    position: relative;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    transition: all .35s;
+    margin: 50px;
+    float: left;
+    width: 25%;
+
+}
+
+
+.price-header, .price-table, section {
+    overflow: hidden;
+}
+
+
+.price-header {
+    background-color: #000;
+    margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    position: relative;
+}
+
+
+.price-plan h4 {
+    font-weight: 600;
+    color: #fff;
+    
+}
+/* .price-header {
+    background-color: #000;
+    margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    position: relative;
+}
+.price-popular {
+    position: absolute;
+    top: 1.5rem;
+    left: 2.875rem;
+    transform: rotate(45deg);
+} */
+.line {
+    background-color: #fff;
+    margin: 0 auto;
+    height: 2px;
+    width: 60px;
+}
+.price-pay{
+    margin: 1.7rem auto;
+}
+.price-pay h3 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ff206e;
+    margin-bottom: 0;
+}
+.price-pay h3 span, .stat-icon i {
+    font-size: 2rem;
+}
+.price-info {
+    padding: 0 3rem;
+    margin-bottom: 2.5rem;
+}
+.client-review h6:after, .price-info p:after {
+    content: '';
+    display: block;
+}
+.price-info p:after {
+    border-bottom: 1px solid #f1f1f1;
+    margin: 1rem 0;
+}
+
+.price-table .btn-primary {
+    background-color: #000;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 15%);
+}
+.price-table .btn {
+    border: none;
+    border-radius: 100px;
+    padding: .5rem 2rem;
+    transition: all .35s ;
+}
+.price {
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
+}
+
+.price, .price-table {
+    background-color: #fff;
+}
+section {
+    position: relative;
+    width: 100%;
+    transition: all .5s ;
+    z-index: 1;
+}
+
+
+
+
+
+.Counter{
+    background-image: url(../images/stat.jpg);
+   background-attachment: fixed; 
+   background-position: center ;
+   background-size: cover;
+   position: relative;
+}
+.colored-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(119, 118, 118, 0.2) 
+}
+.counter-count{
+    padding: 10px;
+}
+.Counter .counter-count p{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(250, 11, 111);
+
+}
+.Counter .counter-count span{
+    font-size: 20px;
+    color: white;
+}
+.counter-icon {
+    padding-top:20px;
+
+}
+.counter-icon i{
+    font-size: 40px;
+    color: white;
+    padding: 15px;
+    
+}
+
+
+.w-10{
+    width: 10%;
+}
+.feedback img{
+    
+    border: 4px solid rgb(241, 241, 241);
+    box-shadow: 0 8px 30px rgb(0 0 0 / 30%);
+    transform: translateY(-50%);
+}
+
+.feedback-h6{
+    position: relative;
+}
+.feedback-h6::after{
+    content: "";
+    margin-top: 10px;
+    width: 30px;
+    height: 2px;
+    background-color: #ff206e;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+.feedback:hover .feedback-h6::after{
+    width: 60px;
+}
+
+#img-slider{
+    background-image: url(../images/dark_dot.jpg);
+}
+.img-width img{
+    width: 15%;
+    padding: 50px;
+}
+
+#blogs{
+    background-image: url(../images/light_dot.jpg);
+}
+.blog-read i{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+    float: right;
+    transform: translate(-50%,-80%);
+    border: 1px solid rgb(241, 241, 241);
+    box-shadow: 0 8px 30px rgb(0 0 0 / 30%);
+}
+.blog-post img{
+    transition: all 1s;
+}
+.blog-post img:hover{
+transform: scale(1.1,1.1);
+}
+.blog-post{
+   padding: 10px;
+   box-shadow: 0 5px 15px 0 rgb(10 10 10 / 15%), 0 30px 50px -40px rgb(0 0 0 / 35%);
+}
+
+.blog-read i:hover{
+    color: rgb(250, 11, 111);
+}
+
+.blog-info a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: .75rem;
+    font-weight: 400;
+    color:rgb(250, 11, 111);
+}
+
+
+.contact-content .Name , .text-message , .email {
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.button{
+    color: black;
+    font-size: 18px;
+    border: 0;
+   
+}
+.button:hover{
+    background-color: rgb(250, 11, 111);
+}
+.contact-info h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(250, 11, 111);
+}
+.contact-info p{
+color: white;
+}
+
+
+#foot{
+    padding: 1.5rem 0;
+    background-color: white;
+}
+
+.copy-rights p{
+    font-size: .75rem;
+}
